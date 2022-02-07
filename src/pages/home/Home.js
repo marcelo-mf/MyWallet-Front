@@ -27,8 +27,6 @@ export default function Home() {
         promise.catch(console.log('erro'));
     }, []);
 
-    console.log(list);
-
     let saldo = 0;
 
     for(let i = 0; i < list.length; i++) {
