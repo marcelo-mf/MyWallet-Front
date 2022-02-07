@@ -14,6 +14,10 @@ align-items: center;
 
 gap: 36px;
 
+a:hover {
+    cursor: pointer;
+}
+
 `
 
 export default Container;

@@ -9,6 +9,9 @@ justify-content: center;
 
 gap: 15px;
 
+button:hover{
+    cursor: pointer;
+}
 
 `
 

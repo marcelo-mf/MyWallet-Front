@@ -19,6 +19,10 @@ h1{
     font-size: 26px;
 }
 
+.logout-icon:hover {
+    cursor: pointer;
+}
+
 `
 
 export default Header;

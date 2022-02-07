@@ -6,6 +6,7 @@ const RegistrosContainer = styled.div`
     width: 326px;
 
     margin-top: -18px;
+    padding: 10px 5px;
 
     background-color: white;
 
@@ -14,7 +15,7 @@ const RegistrosContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     p{
         color: #868686;
@@ -22,6 +23,48 @@ const RegistrosContainer = styled.div`
         font-weight: 400;
         line-height: 24px;
         text-align: center;
+    }
+
+    .conatiner-itens{
+        width: 100%;
+    }
+
+    .vazio{
+
+        height: 446px;
+        width: 326px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .green {
+        font-weight: 400;
+        color: green;
+        font-size: 16PX;
+    }
+
+    .red{
+        font-weight: 400;
+        color: red;
+        font-size: 16PX;
+    }
+
+    .footer{
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1px 10px;
+
+        .saldo{
+            font-weight: 700;
+            color: black;
+            font-size: 17px;
+        }
     }
 
 `
@@ -60,6 +103,56 @@ const EntradaSaidaContainer = styled.div`
 
     }
 
+    div:hover{
+        cursor: pointer;
+    }
+
 `
 
-export {RegistrosContainer, EntradaSaidaContainer};
+const ContainerItem = styled.div`
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1px 10px;
+
+    .date{
+        font-weight: 400;
+        color: #C6C6C6;
+        font-size: 16PX;
+
+        margin-right: 15px;
+    }
+
+    .description{
+        font-weight: 400;
+        color: #000000;
+        font-size: 16PX;
+    }
+
+    .green {
+        font-weight: 400;
+        color: green;
+        font-size: 16PX;
+    }
+
+    .red{
+        font-weight: 400;
+        color: red;
+        font-size: 16PX;
+    }
+
+`
+
+const ContainerDateDesc = styled.div`
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+`
+
+export {RegistrosContainer, EntradaSaidaContainer, ContainerItem, ContainerDateDesc};
