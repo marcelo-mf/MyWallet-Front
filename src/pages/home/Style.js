@@ -17,6 +17,8 @@ const RegistrosContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    overflow: scroll;
+
     p{
         color: #868686;
         font-size: 20px;
