@@ -23,7 +23,6 @@ export default function Home() {
         promise.then(response => {
 
             setList(response.data);
-            console.log(token);
         })
         promise.catch(console.log('erro'));
     }, []);
